@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando Checkbox e Radio Button</title>
+</head>
+<body>
+    <h1>You are selected: Pizza of Cheese</h1>
+    <p>What options do you want the most?</p>
+    <form method="POST">
+    <!-- Ao incluir "option[]", os valores chegaram em formato de lista no back-end sem se sobrescrever -->
+        <input type="checkbox" name="option[]" value="pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="option[]" value="mushrooms"> Mushrooms<br>
+        <input type="checkbox" name="option[]" value="onions"> Onions<br>
+        <input type="checkbox" name="option[]" value="sausage" disabled> Sausage<br>
+        <h3>Stuffed edge</h3>
+        <input type="radio" name="stuffed" value="yes"> Yes<br>
+        <input type="radio" name="stuffed" value="no"> No<br>
+
+        <h3>Choose your Payment method</h3>
+        <input type="radio" name="payment" value="credit"> Credit Card<br>
+        <input type="radio" name="payment" value="debit"> Debit Card<br>
+        <input type="radio" name="payment" value="pix"> Pix<br>
+        <input type="radio" name="payment" value="cash"> Cash<br>
+        <br>
+        <button type="submit">Submit your Order</button>
+    </form>
+</body>
+</html>

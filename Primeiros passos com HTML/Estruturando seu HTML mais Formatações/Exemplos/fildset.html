@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Fildset</title>
+</head>
+<body>
+    <h1>Register for our Games Service</h1>
+    <form onsubmit="" name="RegisterProfile" autocomplete="off" method="POST">
+        <fieldset>
+        <legend>Profile Information</legend>
+        <label>Name: <input type="text" name="name" required></label>
+        <br>
+        <label>E-mail: <input type="email" name="email" required></label>
+        <br>
+        <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+        <br>
+        <label>Password: <input type="password" name="password" required></label>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Game Settings</legend>
+        <label>Difficult: <input type="range" name="difficult" value="50" min="0" max="100" required></label>
+        <br>
+        <label>Profiles Color: <input type="color" name="profilescolor" required></label>
+        <br>
+        <label>HyperLink Personality of Server: <input type="url" name="urlserver" required></label>
+        <br>
+        <label>Data to Start Event of Server: <input type="date" name="date" required></label>
+        <br>
+        <label>Enable Private Chat for Teams: <input type="checkbox" name="enablechat" required></label> 
+        <!-- Pode ser usado o input radio -->
+        <br>
+        <label>Search for any available texture: <input type="search" name="searchservice" required></label>
+        </fieldset>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit" >Register</button>
+    </form>
+</body>
+</html>

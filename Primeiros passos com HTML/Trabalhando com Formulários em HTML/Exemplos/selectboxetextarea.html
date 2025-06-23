@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Box</title>
+</head>
+<body>
+    <form onsubmit="" method="POST">
+        <h1>Order of Support</h1>
+        <label>Problem: <textarea type="text" name="problem"></textarea></label>
+        <br>
+        <label>Priority: 
+            <select name="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+        <br>
+        <label>Departments
+            <select name="department" multiple required>
+                <option value="technical">Technical Support</option>
+                <option value="billing">Billing</option>
+                <option value="sales">Sales</option>
+                <option value="general">General Inquiry</option>
+            </select>
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

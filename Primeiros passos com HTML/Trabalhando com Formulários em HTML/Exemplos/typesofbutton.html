@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Button</title>
+</head>
+<body>
+    <!-- O onsubmit serve para validar os dados do formulários antes de envia-los para o backend -->
+    <form onsubmit="" method="POST">
+        <h1>Register Here!</h1>
+        <label>Name: <input type="name" name="name" required></label>
+        <br>
+        <label>Email: <input type="email" name="email" required></label>
+        <br>
+        <label>Age: <input type="number" name="age" min="18" max="120" required></label>
+        <br>
+        <label>Password: <input type="password" name="password" required></label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Button clicked!')">Click Me!</button>
+    </form>
+</body>
+</html>
