@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h4 {
+        color: rgb(0, 255, 0);
+    }
+    section p {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        padding: 30px;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+    #seletoreseclass .bola {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+    }
+    #azul {
+        color: blue;
+    }
+    #textoazul {
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    [title="Exemplo de link com atributo"] {
+        color: red;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <main>
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Voltar ao Índice</a></li>
+                <li><a href="seletores.html">Seletores CSS</a></li>
+            </ul>
+        </aside>
+        <article>
+        <h1>Seletores CSS</h1>
+        <p>Seletores são padrões usados para selecionar os elementos HTML que você deseja estilizar.</p>
+
+        <h2>Tipos de Seletores</h2>
+        <ul>
+            <li><strong>Seletores de Tag:</strong> Seleciona todos os elementos de um tipo específico.</li>
+            <li><strong>Seletores de Classe:</strong> Seleciona todos os elementos com uma classe específica.</li>
+            <li><strong>Seletores de ID:</strong> Seleciona um único elemento com um ID específico.</li>
+            <li><strong>Seletores Atributo:</strong> Seleciona elementos com um atributo específico.</li>
+            <li><strong>Seletores Universais:</strong> Define estilos universais</li>
+        </ul>
+        <section id="seletorestag" >
+            <h2>Exemplos por Tag: </h2>
+            <h4>Life is beautiful</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam itaque ratione veritatis, 
+                ipsum dicta! Maxime iure nobis, optio id aliquam dicta porro quod! Quibusdam quisquam accusamus dignissimos! Velit, perspiciatis?
+            </p>
+        </section>
+        <section id="seletoreseclass">
+            <h2>Exemplos por Classe: </h2>
+            <h4 class="verde">Life is beautiful</h4>
+            <div class="bola"></div>
+        </section>
+        <section id="seletoreseid">
+            <h2>Exemplos por ID: </h2>
+            <h4 id="azul">Life is beautiful</h4>
+            <p id="textoazul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam itaque ratione veritatis, 
+                ipsum dicta! Maxime iure nobis, optio id aliquam dicta porro quod! Quibusdam quisquam accusamus dignissimos! Velit, perspiciatis?
+            </p>
+        </section>
+        <section id="seletoreseatributo">
+            <h2>Exemplos por Atributo: </h2>
+            <a href="https://www.example.com" title="Exemplo de link com atributo">Visite nosso site</a>
+        </section>
+        <section id="seletoresuniversais">
+            <h2>Exemplos Universais: </h2>
+            <p>Todos os elementos deste parágrafo serão afetados por estilos universais.</p>
+        </section>
+        </article>
+        <aside>
+            <h2>Assuntos</h2>
+            <ul>
+                <li><a href="#seletorestag">Seletores de Tag</a></li>
+                <li><a href="#seletoreseclass">Seletores de Classe</a></li>
+                <li><a href="#seletoreseid">Seletores de ID</a></li>
+                <li><a href="#seletoreseatributo">Seletores de Atributo</a></li>
+                <li><a href="#seletoresuniversais">Seletores Universais</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
