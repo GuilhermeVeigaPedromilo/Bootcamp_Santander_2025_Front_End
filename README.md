@@ -12,3 +12,8 @@
 - A proposta deste desafio é desenvolver um website simples, utilizando as **tags HTML** aprendidas durante as aulas práticas. O objetivo é fixar o conhecimento por meio da prática!
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Primeiros%20passos%20com%20HTML/Desafio%20de%20Projeto%20-%20Criando%20uma%20Página%20WEB/Criar%20Uma%20Página%20Web%20Utilizando%20as%20Tags%20Aprendidas.md)
+
+### 🔄 Desafio de Projeto - Recriando o Wikipedia com Layout Moderno
+- Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Primeiros%20passos%20com%20HTML/Desafio%20de%20Projeto%20-%20Recriando%20o%20Wikipedia%20com%20Layout%20Moderno/Recriando%20o%20Wikipedia%20com%20Layout%20Moderno.md)
