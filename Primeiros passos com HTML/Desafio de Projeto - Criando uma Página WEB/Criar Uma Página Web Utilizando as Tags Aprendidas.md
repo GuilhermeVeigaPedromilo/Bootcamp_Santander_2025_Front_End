@@ -27,10 +27,7 @@ Assista a uma aula prática com o expert Felipe Aguiar sobre os primeiros passos
 
 ## 🎯 Resultado
 
-<video controls>
-        <source src="../../public/midia/video/desafio-criar uma página web.mp4">
-        Your browser does not support the audio element.
-</video>
+https://github.com/GuilhermeVeigaPedromilo/Bootcamp_Santander_2025_Front_End/blob/main/public/midia/video/desafio-criar%20uma%20p%C3%A1gina%20web.mp4
 
 - [📄 Acesse o Código por Aqui!](./desafio-de-projeto.html)
 
