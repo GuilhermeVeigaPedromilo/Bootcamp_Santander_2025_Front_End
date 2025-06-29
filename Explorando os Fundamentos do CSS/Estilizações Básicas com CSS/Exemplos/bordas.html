@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Explorando os Fundamentos do CSS</title>
+</head>
+<style>
+    article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+    background: url('../../../public/images/css_fundo.png'), linear-gradient(135deg, #ee0b0b, #4d281d);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+  }
+</style>
+<body>
+  <header>
+    <h1 id="initial">Estilizações Básicas com CSS</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article>
+      <h1 style="font-size: 150px;">Bordas</h1>
+      <div style="width: 900px;">
+        <span style="font-size: 20px;">
+          O CSS oferece diversas maneiras de estilizar bordas, permitindo desde bordas simples até efeitos visuais mais complexos. As principais propriedades para controle de bordas são:
+        </span>
+        <ul style="font-size: 15px; margin-left: 20px; margin-top: 10px;">
+          <li><code>border-style</code>: define o tipo de linha (solid, dashed, dotted, double, etc.)</li>
+          <li><code>border-width</code>: define a espessura da borda</li>
+          <li><code>border-color</code>: define a cor da borda</li>
+          <li><code>border-radius</code>: define cantos arredondados</li>
+          <li><code>border-image</code>: permite utilizar uma imagem como borda</li>
+          <li><code>border-style</code>: define o tipo de linha (solid, dashed, dotted, double, outset, inset, groove, ridge, etc.)</li>
+        </ul>
+      </div>
+    </article>
+
+ <div style="width: 60%;" >
+<h2>Exemplos utilizando <code>border</code>:</h2>
+      <section style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+        <!-- Solid -->
+        <div style="text-align: center;">
+          <div style="border: 5px solid red; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>border: 5px solid red</code></p>
+        </div>
+
+        <!-- Dashed -->
+        <div style="text-align: center;">
+          <div style="border: 5px dashed blue; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>border: 5px dashed blue</code></p>
+        </div>
+
+        <!-- Dotted -->
+        <div style="text-align: center;">
+          <div style="border: 5px dotted green; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>border: 5px dotted green</code></p>
+        </div>
+
+        <!-- Double -->
+        <div style="text-align: center;">
+          <div style="border: 5px double purple; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>border: 5px double purple</code></p>
+        </div>
+
+        <!-- Radius -->
+        <div style="text-align: center;">
+          <div style="border: 5px solid orange; border-radius: 50px; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>border-radius: 50px</code></p>
+        </div>
+
+        <!-- Outline (extra) -->
+        <div style="text-align: center;">
+          <div style="border: 5px solid black; outline: 10px dashed red; width: 300px; height: 300px; margin-bottom: 10px;"></div>
+          <p><code>outline: 10px dashed red</code></p>
+        </div>
+
+        <!-- Border Image -->
+        <div id="bordasimagesource" style="text-align: center;">
+          <div
+            style="
+              border: 30px solid transparent;
+              border-image-source: url('../../../public/images/imagemparaborda.png');
+              border-image-slice: 880;
+              border-image-repeat: round;
+              background-color: #a200ff;
+              width: 300px;
+              height: 300px;
+              box-sizing: border-box;
+              margin-bottom: 10px;
+            "
+          ></div>
+          <p><code>border-image-source: url()</code></p>
+        </div>
+
+        <!-- Border com gradient -->
+        <div style="text-align: center;">
+          <div
+            style="
+              border: 20px solid transparent;
+              border-image-source: linear-gradient(120deg, black, blue, red);
+              border-image-slice: 1;
+              border-image-repeat: stretch;
+              background-color: #ff0000;
+              width: 300px;
+              height: 300px;
+              box-sizing: border-box;
+              margin-bottom: 10px;
+            "
+          ></div>
+          <p><code>border-image-source: linear-gradient()</code></p>
+        </div>
+        <!-- Outset -->
+<div style="text-align: center;">
+  <div style="border: 10px outset #0077ff; width: 300px; height: 300px; margin-bottom: 10px; background-color: white;"></div>
+  <p><code>border: 10px outset #0077ff</code></p>
+</div>
+
+<!-- Inset (complementar ao outset) -->
+<div style="text-align: center;">
+  <div style="border: 10px inset #0077ff; width: 300px; height: 300px; margin-bottom: 10px; background-color: white;"></div>
+  <p><code>border: 10px inset #0077ff</code></p>
+</div>
+<div style="text-align: center;">
+  <div
+    style="
+      border: 20px solid transparent;
+      border-image-source: url('../../../public/images/imagemparaborda.png');
+      border-image-slice: 800;
+      border-image-repeat: round;
+      border-image-outset: 20px;
+      background-color: #fff1cc;
+      width: 300px;
+      height: 300px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    "
+  ></div>
+  <p><code>border-image-outset: 20px</code></p>
+</div>
+
+      </section>
+    </div>
+
+    <aside>
+      <h2>Sumário</h2>
+      <ul style="margin-left: 20px;">
+        <li><a href="#initial">Bordas</a></li>
+        <li><a href="#tiposdebordas">Tipos de Bordas</a></li>
+        <li><a href="#bordasimagesource">Bordas com Imagem e Gradiente</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 - Explorando os Fundamentos do CSS</p>
+  </footer>
+</body>
+
+</html>
