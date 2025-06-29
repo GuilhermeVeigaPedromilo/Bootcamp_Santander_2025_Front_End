@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+</head>
+<style>
+    #Formas {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        max-width: 500px;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    #Formas div {
+        width: 250px;
+        height: 250px;
+    }
+    #Formas div + div + div + div {
+        background-color: #ff0000; /* Hexadecimal */
+    }
+    #Formas div + div + div {
+        background-color: rgb(0, 255, 13); /* RGB */
+    }
+    #Formas div + div {
+        background-color: rgb(255, 230, 0); /* RGBA */
+    }
+    #Formas div {
+        background-color: rgba(47, 0, 255, 0.836); /* HSL */
+    }
+</style>
+<body>
+    <h1>Cores</h1>
+    <span>Existe várias formas de definir-se cores utilizando CSS</span>
+    <ul>
+        <li>Hexadecimal: <span style="color: #FF5733;">#FF5733</span></li>
+        <li>RGB: <span style="color: rgb(255, 87, 51);">rgb(255, 87, 51)</span></li>
+        <li>RGBA: <span style="color: rgba(255, 87, 51, 0.5);">rgba(255, 87, 51, 0.5)</span></li>
+        <li>HSL: <span style="color: hsl(9, 100%, 60%);">hsl(9, 100%, 60%)</span></li>
+        <li>HSLA: <span style="color: hsla(9, 100%, 60%, 0.5);">hsla(9, 100%, 60%, 0.5)</span></li>
+    </ul>
+    <p>Você pode usar essas notações para definir cores em seus estilos CSS.</p>
+    <br>
+    <div id="Formas">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

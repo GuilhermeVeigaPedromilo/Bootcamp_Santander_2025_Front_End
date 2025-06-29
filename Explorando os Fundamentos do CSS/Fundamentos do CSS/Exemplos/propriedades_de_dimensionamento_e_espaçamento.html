@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de Dimensionamento e Espaçamento</title>
+</head>
+<style>
+    #A {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        border-radius: 40px;
+        background-color: lightblue;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #Aa {
+        /* O inherit "consome" o valor inserido no elemento pai */
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: inherit;
+        background-color: lightcoral;
+        border-radius: 40px;
+    }
+    button {
+        /* Apica valores de limite ou mínimos para os elementos */
+        max-width: 20px;
+        min-height: 50px;
+    }
+    #B {
+        display: flex;
+        max-width: 515px;
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    #B div {
+        width: 250px;
+        height: 250px;
+    }
+    #b1 {
+        background-color: lightgreen;
+        margin: 5px 2px 3px 0px;
+    }
+    #b2 {
+        background-color: lightcoral;
+    }
+    #b3 {
+        background-color: lightblue;
+    }
+    #b4 {
+        background-color: lightyellow;
+        margin: 0px 0px 5px 2px;
+    }
+</style>
+<body>
+    <div id="A">
+        <strong>Div Pai "A"</strong>
+        <div id="Aa">
+            <strong>Div Filha "Aa"</strong>
+        </div>
+    </div>
+    <button type="submit">
+        Hello World!
+    </button>
+    <div id="B">
+    <div id="b1" ></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    </div>
+</body>
+</html>
