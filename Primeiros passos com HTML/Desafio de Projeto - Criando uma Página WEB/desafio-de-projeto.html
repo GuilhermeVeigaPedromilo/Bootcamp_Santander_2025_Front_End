@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBlog</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        justify-content: space-around;
+        box-shadow: 4px 4px 4px 4px rgba(131, 131, 131, 0.493);
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+        margin-left: 70%;
+    }
+
+    header ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main div article {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 20px;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    main div aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact,
+    #about {
+        width: 30%;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1 id="home">WebBlog</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <img src="../../public/SantanderBootcampBanner.png"
+            alt="Image about banner of bootcamp Santander - Front-End 2025"
+            title="Banner of bootcamp Santander - Front-End 2025" />
+        <hr>
+        <div>
+        <article>
+            <h2>Wow! What is Bootcamp Santander 2025 - Front-End ?</h2>
+            <span>
+                <blockquote>
+                    Domine a trinca fundamental do bom desenvolvedor Front-End com HTML, CSS e JAVASCRIPT, com uma base
+                    estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas com
+                    temática do Stranger Things, Spider Man, Yu-Gi-Oh e mais!
+                    Estruture páginas web com HTML, estilize interfaces com CSS e conceitos avançados de Flexbox e Grid,
+                    implemente interatividade com JavaScript e trabalhar com APIs e requisições assíncronas.
+                    Estude e faça todas as atividades para de graduar e ganhar seu certificado!
+                </blockquote>
+            </span>
+            <h3>Activies:</h3>
+                <ul>
+                    <li><b>Mentorias (Live):</b> Momento em que você irá se inspirar nos talentos das empresas mais
+                        inovadoras do mundo, podendo interagir ao longo da live e até fazer perguntas sobre carreira e
+                        tecnologia.
+                    </li>
+
+                    <li><b>Desafio de Código: </b>Coloque em prática todo o conhecimento adquirido nas aulas e teste o
+                        seu conhecimento na resolução de um desafio.</li>
+
+                    <li><b>Desafio de Projeto: </b> Construa o seu portfólio construindo projetos práticos com o
+                        conhecimento adquirido ao longo das aulas.
+                    </li>
+                    <li>
+                        <b>
+                            Ranking:</b> Cada bootcamp possui um ranking com premiações exclusivas, onde você pontua de
+                        acordo com as interações que você realiza em Fórum e Rooms, dos acertos que você tem em
+                        questionários e da qualidade do código que você desenvolveu nos desafios.
+                    </li>
+                </ul>
+            <h3>Frameworks for your learning:</h3>
+                <ul>
+                    <li><b>Forúm:</b> Espaço para você interagir e tirar suas dúvidas técnicas com a nossa comunidade.
+                    </li>
+
+                    <li><b>Rooms: </b>Espaço para você conversar com outros matriculados no bootcamp e aumentar o seu
+                        networking.
+
+                    <li><b>Matriculados: </b> Saiba quem está participando da mesma jornada educacional que você.
+                    </li>
+                    <li>
+                        <b>
+                            Certificado: </b>Baixe e compartilhe os certificados de todas as suas conquistas ao longo
+                        desse bootcamp.
+                    </li>
+                </ul>
+        </article>
+        <aside>
+            <br>
+            <span>Publicity</span>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt45IrGHmMOW_jHo4fA20K_a4lM_Cg-D_7JJxhMHlYp66QMH8Jf3sx-u_FA7o8xUIAKs8&usqp=CAU"
+                    alt="Image about bootcamp Java Para Iniciantes - NTT DATA"
+                    title="Bootcamp Java Para Iniciantes - NTT DATA" />
+                <figcaption>Bootcamp Java Para Iniciantes - NTT DATA</figcaption>
+            </figure>
+        </aside>
+        </div>
+        <br>
+        <section align="center" id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about sharing knowledge and ideas through our blog.
+                Our mission is to provide valuable content that inspires and educates our readers.
+                Whether you're looking for tutorials, insights, or just a good read, we've got you covered.
+                Join us on this journey of discovery and learning!
+            </p>
+        </section>
+        <br>
+        <section align="center" id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In necessitatibus molestias, dolore porro eius doloremque consequuntur officiis, cumque maiores totam repellendus! Consequuntur asperiores, nostrum at voluptatum porro totam aspernatur. Ratione?
+            </p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p>Follow us on social media!</p>
+            <ul>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 WebBlog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

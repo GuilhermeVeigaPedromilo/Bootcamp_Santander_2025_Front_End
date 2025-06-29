@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5 - Structure</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    article, section, aside {
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+
+    p {
+        color: #555;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>HTML Semantics</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Understanding HTML Semantics</h1>
+            <p>This article explains the importance of using semantic HTML tags to improve accessibility and SEO. <time>Was published on 06/25/2025 on 21:48</time></p>
+            <article>
+                <h2>What is Semantic HTML?</h2>
+                <p>Semantic HTML refers to the use of HTML markup that conveys meaning about the content it contains. This helps browsers and assistive technologies understand the structure and purpose of the content.</p>
+                <picture>
+                    <source srcset="https://www.ciabyte.com.br/imagens/curso-html5-css3.png" media="(min-width: 600)">
+                    <img src="https://www.ciabyte.com.br/imagens/curso-html5-css3.png" alt="An example of semantic HTML usage" width="75" height="100">
+                </picture>
+                <blockquote cite="https://example.com/semantic-html">
+                    <p>"Semantic HTML is not just about structure, but also about meaning."</p>
+                    <footer>— John Doe</footer>
+                </blockquote>
+        </article>
+        <section>
+            <h2>Benefits of Semantic HTML</h2>
+            <ul>
+                <li>Improves accessibility for users with disabilities.</li>
+                <li>Enhances SEO by providing better context to search engines.</li>
+                <li>Makes the code more readable and maintainable.</li>
+            </ul>
+            <p>For more information, visit the <a href="https://www.w3.org/TR/html5/sections.html">W3C HTML5 specification</a>.</p>
+        </section>
+        <aside>
+            <h2>Related Articles</h2>
+            <ul>
+                <li><a href="#">Understanding HTML5 Elements</a></li>
+                <li><a href="#">Best Practices for Web Accessibility</a></li>
+                <li><a href="#">SEO Tips for Web Developers</a></li>
+            </ul>
+            <figure>
+                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*GgI7FvfCwqSpHgn_VgGEXQ.jpeg" alt="Image about HTML Semantics" width="300" height="200">
+                <figcaption>Example of a semantic image with a caption.</figcaption>
+            </figure>
+            <h2>Tags</h2>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+</html>
