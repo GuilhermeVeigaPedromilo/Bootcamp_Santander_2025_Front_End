@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Explorando os Fundamentos do CSS</title>
+</head>
+<style>
+    @font-face {
+        font-family: IBM Plex Sans;
+        src: url(./fonts/static/IBMPlexSans-Regular.ttf);
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 60vh;
+        background: url('../../../public/images/css_fundo.png'), linear-gradient(135deg, #00ff0d, #000000);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        margin-bottom: 20px;
+        transition: all 1s ease;
+    }
+
+    span {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 id="initial">Estilizações Básicas com CSS</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <h1 style="font-size: 150px;">Sombras</h1>
+            <div style="width: 900px;">
+                <span style="font-size: 20px;">
+                    O CSS também permite aplicar sombras para dar profundidade e destaque a elementos visuais como
+                    caixas, textos e imagens. As principais propriedades para aplicação de sombras são:
+                </span>
+                <ul style="font-size: 15px; margin-left: 20px; margin-top: 10px;">
+                    <li><code>box-shadow</code>: adiciona sombra a elementos em bloco (caixas). Exemplo:
+                        <code>box-shadow: 2px 2px 6px rgba(0,0,0,0.3);</code></li>
+                    <li><code>text-shadow</code>: adiciona sombra ao texto. Exemplo:
+                        <code>text-shadow: 1px 1px 2px gray;</code></li>
+                    <li><code>filter: drop-shadow()</code>: aplica uma sombra a imagens ou elementos inline, mantendo a
+                        forma da imagem (incluindo transparência). Exemplo:
+                        <code>filter: drop-shadow(4px 4px 6px black);</code></li>
+                    <li><code>filter: blur()</code>: desfoca o elemento, podendo ser usado junto ao
+                        <code>drop-shadow</code> para efeitos visuais mais suaves. Exemplo:
+                        <code>filter: blur(2px);</code></li>
+                    <li><code>inset</code> (com <code>box-shadow</code>): aplica a sombra internamente no elemento, ao
+                        invés de fora. Exemplo: <code>box-shadow: inset 0 0 5px gray;</code></li>
+                </ul>
+            </div>
+        </article>
+
+        <div style="width: 60%;">
+            <section>
+                <br>
+                <h1 id="boxshadow">Utilizando box-shadow em elementos</h1>
+                <ul>
+                    <li>
+                        <span>
+                            Exemplo simples de uso de <code>box-shadow: 20px 20px 10px 10px #any-color</code>
+                        </span>
+                        <br>
+                        <div style="width: 200px;
+                        height: 200px;
+                        background-color: #00ee14;
+                        box-shadow: 20px 20px 10px 10px seagreen;
+                        ">
+                        </div>
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <span>
+                            Exemplo de sombra interna usando <code>box-shadow: inset 10px 10px 5px 50px seagreen</code>
+                        </span>
+                        <br>
+                        <div style="width: 200px;
+                        height: 200px;
+                        background-color: #00ee14;
+                        box-shadow: inset 10px 10px 5px 50px seagreen;
+                        ">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <span>
+                            Exemplo de sombra interna e externa usando
+                            <code>box-shadow: inset 10px 10px 5px 50px seagreen, 20px 20px 10px rgba(39, 92, 18, 0.144)</code>
+                        </span>
+                        <br>
+                        <div style="width: 200px;
+                        height: 200px;
+                        background-color: #00ee14;
+                        box-shadow: inset 10px 10px 5px 50px seagreen, 20px 20px 10px rgba(39, 92, 18, 0.493)
+                        ">
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <h1 id="imgshadow">Sombras em imagens</h1>
+                <ul>
+                    <li>
+                        <span>
+                            Exemplo simples de uso de <code>box-shadow: 10px 10px 10px #0000008e;</code>
+                        </span>
+                        <br>
+                        <img src="../../../public/images/imagemparaborda.png" style="
+                       width: 300px;
+                       height: 300px;
+                       object-fit: cover;
+                       box-shadow: 10px 10px 10px #0000008e;
+                       ">
+                    </li>
+                    <br>
+                    <li>
+                        <span>
+                            Exemplo de sombra interna <code>filter: drop-shadow(10px 10px 10px rgb(66, 1, 1));</code>
+                        </span>
+                        <br>
+                        <img src="../../../public/images/God_of_War_2018_logo.png" style="
+                       width: 500px;
+                       height: 120px;
+                       object-fit: cover;
+                       filter: drop-shadow(10px 10px 10px rgb(66, 1, 1));
+                       ">
+                    </li>
+                </ul>
+                <br>
+            </section>
+        </div>
+        <aside>
+            <h2>Sumário</h2>
+            <ul style="font-family: IBM Plex Sans; margin-left: 20px; line-height: 2; color: black;">
+                <li><a href="#initial">Sombras</a></li>
+                <li><a href="#boxshadow">Utilizando box-shadow em elementos</a></li>
+                <li><a href="#imgshadow">Sombras em imagens</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 - Explorando os Fundamentos do CSS</p>
+    </footer>
+</body>
+
+</html>

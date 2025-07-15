@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Explorando os Fundamentos do CSS</title>
+</head>
+<style>
+  @font-face {
+    font-family: IBM Plex Sans;
+    src: url(./fonts/static/IBMPlexSans-Regular.ttf);
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+    background: url('../../../public/images/css_fundo.png'), linear-gradient(135deg, #000000, #ff00b3);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+  }
+
+  span {
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <header>
+    <h1 id="initial">Estilizações Básicas com CSS</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article>
+      <h1 style="font-size: 150px;">Textos</h1>
+      <div style="width: 900px;">
+        <span style="font-size: 20px;">
+          O CSS oferece diversas maneiras de estilizar textos, permitindo controlar alinhamento, espaçamento,
+          transformação e decoração do conteúdo textual. As principais propriedades para estilização de textos são:
+        </span>
+        <ul style="font-size: 15px; margin-left: 20px; margin-top: 10px;">
+          <li><code>text-align</code>: define o alinhamento do texto (left, right, center, justify)</li>
+          <li><code>text-decoration</code>: adiciona efeitos decorativos ao texto (none, underline, overline,
+            line-through)</li>
+          <li><code>text-transform</code>: controla a capitalização do texto (none, uppercase, lowercase, capitalize)
+          </li>
+          <li><code>text-indent</code>: define o recuo da primeira linha de um parágrafo</li>
+          <li><code>letter-spacing</code>: define o espaçamento entre letras</li>
+          <li><code>word-spacing</code>: define o espaçamento entre palavras</li>
+          <li><code>line-height</code>: define a altura entre linhas de texto</li>
+          <li><code>direction</code>: define a direção do texto (ltr para esquerda-direita, rtl para direita-esquerda)
+          </li>
+          <li><code>white-space</code>: controla como os espaços em branco são tratados (normal, nowrap, pre, etc.)</li>
+        </ul>
+      </div>
+    </article>
+
+    <div style="width: 60%;">
+      <section>
+        <br>
+        <h1 id="texttransform">Utilizando text-transform</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>text-transform</code> para estilizar o texto.
+            </span>
+            <br>
+            <span style="text-transform: uppercase;">
+              Este é um exemplo de uso de <mark>text-transform: uppercase</mark>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="textalign">Utilizando text-align</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>text-align: center </code> para alinhar ao texto ao centro.
+            </span>
+            <br>
+            <div style="padding: 10px; background-color: rgb(209, 209, 209)">
+              <span style="text-align: center;">
+                Este é um exemplo de uso de <mark>text-align: center</mark>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi alias qui,
+                laborum quae culpa illum adipisci dolor doloremque distinctio aspernatur vitae incidunt sit, neque nisi,
+                dignissimos eum ipsam aliquid?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos nisi cum nulla ut quas
+                debitis commodi corporis impedit sequi non
+                doloremque obcaecati quia, facilis sunt vero? Ex, reiciendis tempore.
+              </span>
+            </div>
+          </li>
+          <br>
+          <li>
+            <span>
+              Deve ser utiliado o <code>text-align: justify</code> para tornar o texto justificado.
+            </span>
+            <br>
+            <div style="padding: 10px; background-color: rgb(209, 209, 209)">
+              <span style="text-align: justify;">
+                Este é um exemplo de uso de <mark>text-align: justify</mark>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi alias qui,
+                laborum quae culpa illum adipisci dolor doloremque distinctio aspernatur vitae incidunt sit, neque nisi,
+                dignissimos eum ipsam aliquid?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos nisi cum nulla ut quas
+                debitis commodi corporis impedit sequi non
+                doloremque obcaecati quia, facilis sunt vero? Ex, reiciendis tempore.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <br>
+        <h1 id="textdecoration">Utilizando text-decoration</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>text-decoration</code> para estilizar o texto.
+            </span>
+            <br>
+            <span style="text-decoration: overline;">
+              Este é um exemplo de uso de <mark>text-decoration: overline</mark>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="textidenty">Utilizando text-indent</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>text-indent</code> para definir um recuo no começo do texto.
+            </span>
+            <br>
+            <p style="text-indent: 10px;">
+              Este é um exemplo de uso de <mark>text-indent: 20px</mark> Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit.
+              Aperiam praesentium, consequuntur numquam voluptates similique ipsa repellat
+              explicabo voluptas ut libero neque dolore saepe laboriosam asperiores quidem eaque sunt, tenetur magni.
+            </p>
+          </li>
+        </ul>
+        <br>
+        <h1 id="textspacing">Utilizando recursos de espaçamento</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>letter-spacing</code> para definir o espaçamento entre letras
+            </span>
+            <br>
+            <span style="letter-spacing: 3px;">
+              Este é um exemplo de uso de <mark>letter-spacing: 3px</mark>
+            </span>
+          </li>
+          <br>
+          <li>
+            <span>
+              Deve ser utiliado o <code>word-spacing</code> para definir o espaçamento entre palavras
+            </span>
+            <br>
+            <span style="word-spacing: 5px;">
+              Este é um exemplo de uso de <mark>word-spacing: 5px</mark>
+            </span>
+          </li>
+          <br>
+          <li>
+            <span>
+              Deve ser utiliado o <code>white-spacing</code> para definir como os espaços irão funcionar
+            </span>
+            <br>
+            <span style="width: 50px; white-space: break-spaces;">
+              Este é um exemplo de uso de <mark>white-space: break-spaces</mark></span>
+          </li>
+          <br>
+          <li>
+            <span style="word-wrap: normal;">
+              Deve ser utiliado o <code>word-wrap</code> para definir se as palavras vão ultrapassar ou não os limites
+              de um elemento
+            </span>
+            <br>
+            <div style="width: 25%;">
+              <span style="word-wrap: break-word;">
+                Este é um exemplo de uso de <mark>word-spacing: break-spaces</mark>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <aside>
+      <h2>Sumário</h2>
+      <ul style="font-family: IBM Plex Sans; margin-left: 20px; line-height: 2; color: black;">
+        <li><a href="#initial">Textos</a></li>
+        <li><a href="#texttransform">Utilizando text-transform</a></li>
+        <li><a href="#textalign">Utilizando o text-align</a></li>
+        <li><a href="#textdecoration">Utilizando o text-decoration</a></li>
+        <li><a href="#textindent">Utilizando o text-indent</a></li>
+        <li><a href="#textspacing">Utilizando recursos de espaçamento</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 - Explorando os Fundamentos do CSS</p>
+  </footer>
+</body>
+
+</html>

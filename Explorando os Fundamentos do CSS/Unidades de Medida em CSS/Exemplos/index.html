@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../Estilizações Básicas com CSS/Exemplos/assets/css/style.css">
+  <title>Unidades de Medidas em CSS</title>
+</head>
+<style>
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+    background: url('../../../public/images/css_fundo.png'), repeating-radial-gradient(circle, #0551f5, #f50505 10px, #f5a505 10px, #f5a505 20px);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+  }
+
+  span {
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <header>
+    <h1 id="initial">Unidades de Medidas em CSS</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article>
+      <h1 style="font-size: 120px;">Unidades de Medidas em CSS</h1>
+    </article>
+
+      <section style="width: 60%;">
+        <br>
+        <h1 id="unirel">Unidades de medidas relativas</h1>
+        <br>
+        <ul>
+          <li>
+            <h3 id="em" >Unidade de medida <code>em</code></h3>
+            <br>
+            <span>
+              Os elementos tem seu tamanho relacionado com o elemento pai:
+            </span>
+            <div style="padding: 10px; background-color: #2d9618; font-size: 15px;">
+                <span>Font-Size: 15px</span>
+                <div style="background-color: #f57905;">
+                  <span style="font-size: 2em;" >Font-Size: 30px (font-size: 2em)</span>
+                  <div style="font-size: 1.5em; background-color: rgb(251, 255, 0);">
+                    <span>Font-Size: 22.5px (font-size: 1.5em)</span>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <br>
+          <li>
+            <h3 id="percent" >Unidade de medida <code>percent</code></h3>
+            <br>
+            <span>
+              Os elementos tem seu tamanho relacionado com o elemento raiz, ou seja, o elemento html (root):
+            </span>
+            <div style="padding: 10px; background-color: #ff0000; font-size: 15px;">
+              <span>No elemento raiz, a div possui 16px de altura</span>
+                <div style="display: flex; height: 10rem; background-color: #f57905;">
+                  <span>height: 10rem (height: 160px)</span>
+                </div>
+            </div>
+          </li>
+          <br>
+          <li>
+            <h3 id="viewpory" >Viewports Units (<code>vh, vw, vmin e vmax</code>)</h3>
+            <br>
+            <span>
+              O viewport é a área visível da página no navegador. As unidades de viewport são relativas ao tamanho do viewport:
+            </span>
+            <div style="width: 100%; padding: 10px 5px 10px 5px; border: 1px solid black; font-size: 15px;">
+              <div style="width: 15vw; padding: 5px; background-color: #0551f5;" >
+                <span>width: 15vw</span>
+              </div>
+              <div style="width: 50%; background-color: #ff0000; padding: 5px;">
+                <span>width: 50%</span>
+              </div>
+              <div style="width: 10vmax; padding: 5px; background-color: aquamarine;" >
+                <span>width: 10vmax (será a porcentagem do maior valor da página: comprimento ou altura)</span>
+              </div>
+              <div style="width: 10vmin; padding: 5px; background-color: rgb(127, 129, 255);" >
+                <span>width: 10vmin (será a porcentagem do menor valor da página: comprimento ou altura)</span>
+              </div>
+            </div>
+          </li>
+          <br>
+          <li>
+            <h3 id="exech" >Unidades de Medida <code>ex e ch</code></h3>
+            <br>
+            <span>
+              As unidades <code>ex</code> e <code>ch</code> são baseadas na altura da letra "x" minúscula e no tamanho do caractere "0", respectivamente:
+            </span>
+            <div style="padding: 10px; background-color: #0551f5; font-size: 15px;">
+              <span>Font-Size: 15px</span>
+              <div style="background-color: #f57905;">
+                <span style="font-size: 2ex;">Font-Size: 30px (font-size: 2ex)</span>
+                <div style="font-size: 1.5ch; background-color: rgb(251, 255, 0);">
+                  <span>Font-Size: 22.5px (font-size: 1.5ch)</span>
+                </div>
+              </div>
+          </li>
+          <br>
+          <li>
+            <h3 id="calc" >Estilizando com Cálculos em css <code>ex e ch</code></h3>
+            <br>
+            <span>
+              As unidades de medida podem ser combinadas com a função <code>calc()</code> para realizar cálculos dinâmicos:
+            </span>
+            <div style="padding: 10px; background-color: #0551f5 ; font-size: 15px;">
+              <span>Font-Size: 15px</span>
+              <div style="background-color: #f57905;">
+                <span style="font-size: calc(2em + 10px);">Font-Size: 40px (font-size: calc(2em + 10px))</span>
+                <div style="font-size: calc(1.5em - 5px); background-color: rgb(251, 255, 0);">
+                  <span>Font-Size: 25px (font-size: calc(1.5em - 5px))</span>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </section>
+
+    <aside>
+      <h2>Sumário</h2>
+      <ul style="font-family: IBM Plex Sans; margin-left: 20px; line-height: 2; color: black;">
+        <li><a href="#unirel">Unidades de medidas relativas</a></li>
+        <ul>
+          <li><a href="#em">Unidade de medida em</a></li>
+          <li><a href="#percent">Unidade de medida percent</a></li>
+          <li><a href="#viewpory">Viewports Units (vh, vw, vmin e vmax)</a></li>
+          <li><a href="#exech">Unidades de Medida ex e ch</a></li>
+          <li><a href="#calc">Estilizando com Cálculos em css</a></li>
+        </ul>
+      </ul>
+    </aside>
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 - Explorando os Fundamentos do CSS</p>
+  </footer>
+</body>
+
+</html>

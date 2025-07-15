@@ -8,17 +8,21 @@
   <title>Explorando os Fundamentos do CSS</title>
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manufacturing+Consent&display=swap');
+
   @font-face {
     font-family: IBM Plex Sans;
     src: url(./fonts/static/IBMPlexSans-Regular.ttf);
   }
-    article {
+
+  article {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 60vh;
-    background: url('../../../public/images/css_fundo.png'), linear-gradient(135deg, #0b53ee, #00b7ff);;
+    background: url('../../../public/images/css_fundo.png'), linear-gradient(135deg, #0b53ee, #00b7ff);
+    ;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,6 +33,7 @@
     margin-bottom: 20px;
     transition: all 1s ease;
   }
+
   span {
     font-size: 20px;
   }
@@ -47,43 +52,139 @@
       <h1 style="font-size: 150px;">Fontes</h1>
       <div style="width: 900px;">
         <span style="font-size: 20px;">
-          O CSS oferece diversas maneiras de estilizar bordas, permitindo desde bordas simples até efeitos visuais mais
-          complexos. As principais propriedades para controle de bordas são:
+          O CSS oferece diversas maneiras de estilizar fonts, permitindo desde fonts simples até efeitos visuais mais
+          complexos. As principais propriedades para estilização de fonts são:
         </span>
         <ul style="font-size: 15px; margin-left: 20px; margin-top: 10px;">
-          <li><code>border-style</code>: define o tipo de linha (solid, dashed, dotted, double, etc.)</li>
-          <li><code>border-width</code>: define a espessura da borda</li>
-          <li><code>border-color</code>: define a cor da borda</li>
-          <li><code>border-radius</code>: define cantos arredondados</li>
-          <li><code>border-image</code>: permite utilizar uma imagem como borda</li>
-          <li><code>border-style</code>: define o tipo de linha (solid, dashed, dotted, double, outset, inset, groove,
-            ridge, etc.)</li>
+          <li><code>font-family</code>: define a família da fonte (ex: Arial, Times New Roman, sans-serif)</li>
+          <li><code>font-size</code>: define o tamanho da fonte (ex: 16px, 1.2em, 100%)</li>
+          <li><code>font-style</code>: define o estilo da fonte (normal, italic, oblique)</li>
+          <li><code>font-weight</code>: define o peso da fonte (normal, bold, 100–900)</li>
+          <li><code>line-height</code>: define a altura da linha, ou espaçamento entre linhas</li>
+          <li><code>letter-spacing</code>: define o espaçamento entre letras</li>
+          <li><code>word-spacing</code>: define o espaçamento entre palavras</li>
         </ul>
+
       </div>
     </article>
 
-    <div style="width: 60%;" >
-    <section>
-      <h1 id="ondeencontrar" >Onde encontrar fontes personalizadas ?</h1>
-      <span>
-        O Google Fonts é um catálogo de fontes e ícones de código aberto, mantido pelo o Google para uso gratuito nos projetos.
-        <a href="https://fonts.google.com">Clique Aqui!</a>
-        <h1>Importando uma Font do Google Fonts</h1>
+    <div style="width: 60%;">
+      <section>
+        <h1 id="ondeencontrar">Onde encontrar fontes personalizadas ?</h1>
         <span>
-          Deve ser utiliado o <code>@font-face</code> para configurar e importar a font.
+          O Google Fonts é um catálogo de fontes e ícones de código aberto, mantido pelo o Google para uso gratuito nos
+          projetos.
+          <a href="https://fonts.google.com">Clique Aqui!</a>
         </span>
         <br>
-      <span style="font-family: IBM Plex Sans;">
-        Este é um exemplo de uso da fonte <mark>IBM Plex Sans - Regular</mark>, após ter sido baixada
-      </span>
-      </span>
-    </section>
+        <br>
+        <h1 id="fontpersonalizada">Importando uma Font do Google Fonts</h1>
+        <ul>
+          <li>
+            <span>
+              Deve ser utiliado o <code>@font-face</code> para configurar e importar a font.
+            </span>
+            <br>
+            <span style="font-family: IBM Plex Sans;">
+              Este é um exemplo de uso da fonte <mark>IBM Plex Sans - Regular</mark>, após ter sido baixada
+            </span>
+          </li>
+          <br>
+          <li>
+            <span>
+              Deve ser utiliado o <code>@import url()</code> para configurar e importar a font via url.
+            </span>
+            <br>
+            <span style="font-family: 'Manufacturing Consent', system-ui;">
+              Este é um exemplo de uso da fonte <mark>Manufacturing Consent</mark>, via url
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="utilfontsize">Utilizando o font-size</h1>
+        <ul>
+          <li>
+            <span>
+              Existem parâmetros de tamanho que referenciam o elemento pai, utilizando smaller por exemplo.
+            </span>
+            <br>
+            <span style="font-size: 20px;">
+              Este é um exemplo de uso de <mark>font-size: 20px</mark>
+              <br>
+              <span style="font-size: smaller;">
+                Este é um exemplo de uso de <mark>font-size: smaller</mark>
+              </span>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="utilfontstyle">Utilizando o font-style</h1>
+        <ul>
+          <li>
+            <span>
+              Existem propriedades de estilo de font.
+            </span>
+            <br>
+            <span style="font-style: italic;">
+              Este é um exemplo de uso de <mark>font-style: italic</mark>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="utilfontvariant">Utilizando o font-variant</h1>
+        <ul>
+          <li>
+            <span>
+              Existem algumas propriedades que se assemelham com textos em caixa alta
+            </span>
+            <br>
+            <span style="font-variant: small-caps;">
+              Este é um exemplo de uso de <mark>font-variant: small-caps</mark>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="utilfontstretch">Utilizando o font-stretch</h1>
+        <ul>
+          <li>
+            <span>
+              Existem algumas propriedades para definir um texto mais estreito ou menos estreito
+            </span>
+            <br>
+            <span style="font-stretch: ultra-condensed;">
+              Este é um exemplo de uso de <mark>font-stretch: ultra-condensed</mark>
+            </span>
+          </li>
+        </ul>
+        <br>
+        <h1 id="utillineheight">Utilizando o line-height</h1>
+        <ul>
+          <li>
+            <span>
+              Existem algumas propriedades para definir o espaçamento entre os textos
+            </span>
+            <br>
+            <span style="line-height: 2;">
+              Este é um exemplo de uso de <mark>line-height: 2</mark>.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio neque ea cupiditate rem nulla,
+              eveniet repellendus quod esse nam minima consequatur commodi, ipsum deleniti cumque facere, dolor ipsa
+              enim.
+            </span>
+          </li>
+        </ul>
+      </section>
     </div>
     <aside>
       <h2>Sumário</h2>
-      <ul style="margin-left: 20px;">
+      <ul style="font-family: IBM Plex Sans; margin-left: 20px; line-height: 2; color: black;">
         <li><a href="#initial">Fontes</a></li>
         <li><a href="#ondeencontrar">Onde Encontrar Fontes Personalizadas?</a></li>
+        <li><a href="#fontpersonalizada">Importando uma Font do Google Fonts</a></li>
+        <li><a href="#utilfontsize">Utilizando o font-size</a></li>
+        <li><a href="#utilfontstyle">Utilizando o font-style</a></li>
+        <li><a href="#utilfontvariant">Utilizando o font-variant</a></li>
+        <li><a href="#utilfontstretch">Utilizando o font-stretch</a></li>
+        <li><a href="#utillineheight">Utilizando o line-height</a></li>
       </ul>
     </aside>
   </main>

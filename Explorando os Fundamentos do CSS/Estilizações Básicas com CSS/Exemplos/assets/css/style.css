@@ -68,8 +68,10 @@
   }
 
   aside {
+    margin: 0px 0px 0px 15px;
     display: flex;
     flex-direction: column;
+    position: static;
     padding: 20px;
     width: inherit;
     height: inherit;
