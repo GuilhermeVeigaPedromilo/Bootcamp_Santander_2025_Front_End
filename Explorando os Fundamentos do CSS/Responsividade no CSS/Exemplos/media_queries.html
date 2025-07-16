@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts Flexíveis - Media Queries</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 40%;
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #333;
+        font-weight: 200;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 1920px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section + section {
+        margin-top: 2rem;
+    }
+
+    .details {
+        display: flex;
+        gap: 0.4vw
+    }
+
+    .cards {
+        background-color: #20202018;
+        max-width: 25vw;
+        min-height: 15vh;
+        padding: 20px;
+        border-radius: 5px;
+        align-content: center;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-card {
+        background-color: rgba(139, 139, 139, 0.247);
+        padding: 10px;
+    }
+
+    .image-card img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+        .details {
+            align-items: center;
+            flex-direction: column;
+            width: 90vw;
+            padding: 0;
+            margin: 0;
+            gap: 1.2rem;
+        }
+        .cards {
+            width: 75%;
+            max-width: none;
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Layouts Flexíveis - Media Queries</h1>
+        <ul style="text-decoration: none; list-style: none;">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Utilizando o flexbox para construir layouts flexíveis</h2>
+        <section>
+            <h3 style="text-align: center;">Saiba Mais</h3>
+            <div class="details">
+                <div class="cards">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facere harum cum quos non illum voluptate laborum facilis ullam, officia natus.
+                    Dolor voluptatibus provident officia repellendus quasi nesciunt, aspernatur
+                    labore blanditiis.
+                </div>
+                <div class="cards">Quia tenetur voluptatem repellat dolorem nemo incidunt, molestias,
+                    reiciendis omnis nam similique tempora beatae ratione officiis ab ipsa libero, cum tempore
+                    blanditiis magnam?
+                    Facilis, doloribus eum itaque sint consequatur veniam.
+                </div>
+                <div class="cards">Rerum dolore asperiores odit impedit quae distinctio recusandae
+                    fuga a delectus eius animi labore nobis quas, ab hic? Aut adipisci facere quo accusantium,
+                    natus impedit modi quia suscipit illum soluta.
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 style="text-align: center;">Galeria de Imagens</h3>
+            <div class="gallery">
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            <figure class="image-card"><img src="../../../public/images/kratos.png" alt="Kratos"></figure>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
