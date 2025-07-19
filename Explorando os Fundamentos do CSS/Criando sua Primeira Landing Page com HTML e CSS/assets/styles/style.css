@@ -158,6 +158,7 @@ main {
     background-position-y: 40%;
     border-top: 1px solid #33abdb;
     border-bottom: 1px solid #33abdb;
+    background-attachment: fixed;
 }
 
 #transform-world p {
