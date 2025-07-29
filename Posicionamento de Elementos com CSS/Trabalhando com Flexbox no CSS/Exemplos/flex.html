@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Flexbox no CSS</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+div {
+    flex-grow: 1;
+}
+
+#item2 {
+    flex-grow: 2;
+}
+</style>
+<body>
+    <h1>A propriedade <code>flex-grow: ;</code></h1>
+    <h2>Exemplo de uso</h2>
+    <div style="display: flex; flex-wrap: wrap; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: yellow; padding: 10px;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow; padding: 10px;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow; padding: 10px;"><span>item3</span></div>
+    </div>
+    <br>
+    <div style="display: flex; flex-wrap: wrap; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>Hello</span></div>
+        <div id="item2" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>New</span></div>
+        <div id="item3" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>World!!!</span></div>
+    </div>
+        <div style="display: flex; flex-direction: column; flex-wrap: wrap; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: yellow; padding: 10px;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow; padding: 10px;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow; padding: 10px;"><span>item3</span></div>
+    </div>
+    <br>
+    <div style="display: flex; flex-direction: column; flex-wrap: wrap; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>Hello</span></div>
+        <div id="item2" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>New</span></div>
+        <div id="item3" style="background-color: rgb(0, 89, 255); padding: 10px;"><span>World!!!</span></div>
+    </div>
+    <h1>A proprieade <code>flex-shrink: ;</code></h1>
+    <h2>Exemplo de uso</h2>
+    <div style="display: flex; flex-shrink: 1; padding: 30px; border: 1px solid red;  " >
+        <div id="item1" style="background-color: yellow;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow;"><span>item3</span></div>
+        <div id="item4" style="background-color: yellow;"><span>item4</span></div>
+        <div id="item5" style="background-color: yellow;"><span>item5</span></div>
+        <div id="item6" style="background-color: yellow;"><span>item6</span></div>
+        <div id="item7" style="background-color: yellow;"><span>item7</span></div>
+        <div id="item8" style="background-color: yellow;"><span>item8</span></div>
+        <div id="item9" style="background-color: yellow;"><span>item9</span></div>
+        <div id="item10" style="background-color: yellow;"><span>item10</span></div>
+        <div id="item11" style="background-color: yellow;"><span>item11</span></div>
+        <div id="item12" style="background-color: yellow;"><span>item12</span></div>
+        <div id="item13" style="background-color: yellow;"><span>item13</span></div>
+        <div id="item14" style="background-color: yellow;"><span>item14</span></div>
+        <div id="item15" style="background-color: yellow;"><span>item15</span></div>
+        <div id="item16" style="background-color: yellow;"><span>item16</span></div>
+        <div id="item17" style="background-color: yellow;"><span>item17</span></div>
+        <div id="item18" style="background-color: yellow;"><span>item18</span></div>
+        <div id="item19" style="background-color: yellow;"><span>item19</span></div>
+        <div id="item20" style="background-color: yellow;"><span>item20</span></div>
+        <div id="item21" style="background-color: yellow;"><span>item21</span></div>
+        <div id="item22" style="background-color: yellow;"><span>item22</span></div>
+        <div id="item23" style="background-color: yellow;"><span>item23</span></div>
+        <div id="item24" style="background-color: yellow;"><span>item24</span></div>
+        <div id="item25" style="background-color: yellow;"><span>item25</span></div>
+        <div id="item26" style="background-color: yellow;"><span>item26</span></div>
+        <div id="item27" style="background-color: yellow;"><span>item27</span></div>
+        <div id="item28" style="background-color: yellow;"><span>item28</span></div>
+        <div id="item29" style="background-color: yellow;"><span>item29</span></div>
+        <div id="item30" style="background-color: yellow;"><span>item30</span></div>
+    </div>
+    <h1>A propriedade <code>flex-basis: ;</code></h1>
+    <h2>Exemplo de uso</h2>
+    <div style="display: flex; flex-basis: 100px; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: yellow;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow;"><span>item3</span></div>
+        <div id="item4" style="background-color: yellow;"><span>item4</span></div>
+        <div id="item5" style="background-color: yellow;"><span>item5</span></div>
+        <div id="item6" style="background-color: yellow;"><span>item6</span></div>
+        <div id="item7" style="background-color: yellow;"><span>item7</span></div>
+        <div id="item8" style="background-color: yellow;"><span>item8</span></div>
+        <div id="item9" style="background-color: yellow;"><span>item9</span></div>
+        <div id="item10" style="background-color: yellow;"><span>item10</span></div>
+    </div>
+    <div style="display: flex; flex-basis: 100px; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: rgb(0, 89, 255);"><span>Hello</span></div>
+        <div id="item2" style="background-color: rgb(0, 89, 255);"><span>New</span></div>
+        <div id="item3" style="background-color: rgb(0, 89, 255);"><span>World!!!</span></div>
+    </div>
+    <h1>A propriedade <code>flex: ;</code></h1>
+    <h2>Exemplo de uso</h2>
+    <div style="display: flex; flex: 1; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: yellow;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow;"><span>item3</span></div>
+    </div>
+    <div style="display: flex; flex: 1; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: rgb(0, 89, 255);"><span>Hello</span></div>
+        <div id="item2" style="background-color: rgb(0, 89, 255);"><span>New</span></div>
+        <div id="item3" style="background-color: rgb(0, 89, 255);"><span>World!!!</span></div>
+    </div>
+    <h1>A proprieade <code>align-self: ;</code></h1>
+    <h2>Exemplo de uso</h2>
+        <div style="display: flex; align-items: center;  height: 500px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: rgb(0, 89, 255); align-self: flex-start;"><span>Hello</span></div>
+        <div id="item2" style="background-color: rgb(0, 89, 255);"><span>New</span></div>
+        <div id="item3" style="background-color: rgb(0, 89, 255); align-self: flex-end;"><span>World!!!</span></div>
+    </div>
+</body>
+</html>

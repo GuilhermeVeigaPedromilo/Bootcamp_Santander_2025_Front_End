@@ -1,0 +1,979 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 12px 24px;
+    height: 8vh;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.headerCenter {
+    flex: 2;
+}
+
+.headerLeft,
+.headerRight {
+    display: flex;
+    flex: 1;
+    gap: 24px;
+}
+
+.Logo img {
+    max-width: 120px;
+}
+
+.headerCenter input {
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    padding: 0px 12px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.headerCenter .SearchIcon {
+    position: absolute;
+    right: 13%;
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: #F9F9F9;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.headerCenter .SearchIcon:hover {
+    background-color: #ececec;
+}
+
+.headerCenter .IconSearchVoz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 3%;
+    position: relative;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+
+.headerCenter .IconSearchVoz:hover {
+    background-color: #ececec;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+header .IconProfile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: auto;
+    padding: 0 0 2rem 0;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 68vw;
+    padding: 2vh 0 0 6vw;
+}
+
+iframe {
+    width: 100%;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+.content-main h1 {
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.info .infoCanal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.info .PictureCanal img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.info .infoCanal div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .infoCanal .Name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info .infoCanal .Name+span {
+    font-size: 0.8rem;
+}
+
+.info .btn-subscribe {
+    background-color: black;
+    padding: 0px 18px;
+    border-radius: 24px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 32px;
+}
+
+.info .btn-subscribe:hover {
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.info .other-btns {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    gap: 12px;
+}
+
+.info .other-btns .btns-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    padding: 2px;
+    background-color: #e7e7e7;
+}
+
+.info .other-btns .btns-feedback button {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    height: 100%;
+    transition: all ease-in-out 0.2s;
+}
+
+.info .other-btns button:hover {
+    background-color: #cccbcb;
+}
+
+.info .other-btns .btns-feedback .btn-like {
+    border-radius: 50px 0px 0px 50px;
+    border-right: 1px solid #c5c5c5;
+    padding: 6px 6px 6px 24px;
+}
+
+.info .other-btns .btns-feedback .btn-dislike {
+    border-radius: 0px 50px 50px 0px;
+    border-left: 1px solid #c5c5c5;
+    padding: 6px 24px 6px 6px;
+}
+
+.info .other-btns .btn-share,
+.btn-download,
+.btn-clipe,
+.btn-more-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 50px;
+    background-color: #e7e7e7;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #e7e7e7;
+  padding: 12px 6px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Esconde parte do conteúdo por altura */
+.description-content {
+  max-height: 7.2em; /* Aproximadamente 4 linhas de texto */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Quando o checkbox é marcado, mostra tudo */
+#toggle-description:checked ~ .description-content {
+  max-height: 1000px; /* ou algo bem grande */
+}
+
+/* Botão de ver mais */
+.toggle-btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.toggle-btn::before {
+  content: "...mais";
+}
+
+#toggle-description:checked ~ .toggle-btn::before {
+  content: "...menos";
+}
+
+
+.description .infoCanal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.description .PictureCanal img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.description .infoCanal div {
+    display: flex;
+    flex-direction: column;
+}
+
+.description .infoCanal .Name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.description .infoCanal .Name+span {
+    font-size: 0.8rem;
+}
+
+.comments {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.comments .comments-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.comments .comments-header .btn-order {
+    display: flex;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments .comment-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.comment-input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.comment-input img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.input-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.comment-input {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+}
+
+.comment-input img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.input-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.comments .comment-input textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    font-size: 14px;
+    outline: 0;
+    line-height: 1;
+    resize: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: start
+}
+
+.input-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    top: 86%;
+    height: 2px;
+    background-color: #000000;
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrapper:focus-within::after {
+    width: 100%;
+}
+
+.comment-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    gap: 12px;
+}
+
+.btn-vertical-more-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: 0;
+}
+
+.icon-profile-of-comment {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info-comment {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.name-profile-of-comment {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+.name-profile-of-comment+span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.btns-comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.btns-comment button {
+    background-color: transparent;
+    border: 0;
+    padding: 6px;
+    transition: all ease-in-out 0.2s;
+}
+
+.btns-comment span {
+    font-size: 12px;
+    margin-left: -6px;
+    font: 400;
+    font-weight: 400;
+}
+
+.btns-comment .btn-answer {
+    padding: 12px;
+    font-weight: 500;
+}
+
+.btns-comment button:hover {
+    background-color: #ececec;
+    border-radius: 50px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2vh 1vw 0 1.5vw;
+    gap: 12px
+}
+
+.thumb {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 104px;
+    gap: 12px;
+}
+
+.thumb div {
+    position: relative;
+}
+
+.thumb div .btn-vertical-more-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: 0;
+}
+
+.thumb figure {
+    width: 213px;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    /* cor de fundo de fallback */
+}
+
+.thumb figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.thumb div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 261.33px;
+    line-height: 1;
+    gap: 12px
+}
+
+.thumb div h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.thumb div span {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1628px) {
+    .info .btn-clipe {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .info .other-btns .btn-download {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .headerCenter input {
+        width: 90%;
+        height: 100%;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.205);
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: start;
+        padding: 0px 12px;
+        text-decoration: none;
+        outline: 0;
+    }
+
+    .headerCenter .SearchIcon {
+        position: absolute;
+        right: 12%;
+        border-radius: 0px 50px 50px 0px;
+        border: 1px solid rgba(0, 0, 0, 0.205);
+        background-color: #F9F9F9;
+        height: 100%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .headerCenter .IconSearchVoz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-left: 6%;
+        position: relative;
+        background-color: #F9F9F9;
+        border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .info .other-btns .btn-share {
+        display: none;
+    }
+
+    .content-main {
+        width: 65vw;
+    }
+
+    aside {
+        width: 35vw;
+    }
+
+    .info .other-btns .btn-more-options img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .info .other-btns .btn-download {
+        display: flex;
+    }
+
+    .info .other-btns .btn-share {
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .content-main {
+        display: contents;
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .thumb {
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        height: 25vh;
+        gap: 12px;
+    }
+
+    .thumb div .btn-vertical-more-options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        width: 16px;
+        height: 16px;
+        border: 0;
+    }
+
+    .thumb figure {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .thumb div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        line-height: 1;
+        gap: 6px;
+        position: relative;
+    }
+
+    .description {
+        order: 2;
+    }
+
+    .thumbs {
+        order: 3;
+    }
+
+    .comments {
+        order: 4;
+    }
+}
+
+@media (max-width: 868px) {
+.headerCenter {
+    flex: auto;
+    width: 65%;
+}
+
+.headerLeft,
+.headerRight {
+    flex: auto;
+    display: flex;
+    gap: 12px;
+}
+
+.headerLeft {
+    width: 25%;
+}
+
+.headerRight {
+    width: 10%;
+}
+
+.headerCenter input {
+    width: 55%;
+    height: 100%;
+}
+
+.headerCenter .SearchIcon {
+    right: 25%;
+    width: 15%;
+}
+
+.headerCenter .IconSearchVoz {
+    margin-left: 12%;
+}
+    .headerRight .IconCamera {
+        display: none;
+    }
+
+    iframe {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+
+    .info .other-btns .btn-download {
+        display: none;
+    }
+    .thumb {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info .other-btns .btn-share {
+        display: none;
+    }
+}
+
+@media (max-width: 667px) {
+
+    header .IconMenu {
+        max-width: 16px;
+    }
+
+    .Logo img {
+    max-width: 100px;
+}
+
+.headerCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    width: 40%;
+}
+
+.headerLeft,
+.headerRight {
+    flex: auto;
+    display: flex;
+    gap: 12px;
+}
+
+.headerLeft {
+    width: 30%;
+}
+
+.headerRight {
+    width: 30%;
+    gap: 12px;
+}
+
+
+.headerCenter input {
+    display: none;
+}
+
+.headerCenter .SearchIcon {
+    position: none;
+    right: 0;
+    border-radius: 0px;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerCenter .IconSearchVoz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    position: none;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        position: relative;
+    }
+
+    .info .infoCanal {
+        width: 100%;
+        position: relative;
+    }
+
+    .info .btn-subscribe {
+        position: absolute;
+        left: 25%;
+        margin-top: 0.5%;
+    }
+
+    .info .other-btns {
+        position: absolute;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 12px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .info .other-btns .btn-clipe,
+    .info .other-btns .btn-download,
+    .info .other-btns .btn-share {
+        display: flex;
+    }
+}
+
+@media (max-width: 615px) {
+    .info .other-btns .btn-clipe {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .info .other-btns .btn-download {
+        display: none;
+    }
+
+    .info .btn-subscribe {
+        left: 30%;
+    }
+}
+
+@media (max-width: 475px) {
+
+header {
+        padding: 6px 12px;
+    }
+    
+    .Logo img {
+        max-width: 80px;
+    }
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+main {
+    padding: 12px 0 2rem 0;
+}
+
+iframe {
+    border-radius: 0px;
+    width: 100%;
+    height: 40vh;
+}
+
+iframe + h1 {
+    margin-left: 6px;
+}
+    .info {
+        width: 95%;
+        align-self: center;
+        height: 12vh;
+    }
+    .info .other-btns .btn-share {
+        display: none;
+    }
+
+    .info .btn-subscribe {
+        left: 35%;
+    }
+
+    .description {
+        align-self: center;
+        width: 95%;
+    }
+
+    .comments {
+        font-size: 12px;
+        align-self: center;
+        width: 95%;
+    }
+
+    .comments .comments-header img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .thumb {
+        width: 45%;
+    }
+}

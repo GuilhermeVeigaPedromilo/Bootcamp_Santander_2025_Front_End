@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Flexbox no CSS</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+#item4 {
+    order: 1;
+}
+
+</style>
+<body>
+    <h1>A proprieade <code>order: ;</code></h1>
+    <p>A propriedade <code>order</code> é usada para alterar a ordem de exibição dos itens dentro de um contêiner flexível. 
+        Por padrão, todos os itens têm um valor de <code>order</code> igual a 0. Itens com valores de <code>order</code> 
+        mais baixos aparecem antes dos itens com valores mais altos.</p>
+    <h2>Exemplo de uso</h2>
+    <div style="display: flex; flex-wrap: wrap; padding: 30px; border: 1px solid red; gap: 20px; " >
+        <div id="item1" style="background-color: yellow; padding: 10px;"><span>item1</span></div>
+        <div id="item2" style="background-color: yellow; padding: 10px;"><span>item2</span></div>
+        <div id="item3" style="background-color: yellow; padding: 10px;"><span>item3</span></div>
+        <div id="item4" style="background-color: yellow; padding: 10px;"><span>item4</span></div>
+        <div id="item5" style="background-color: yellow; padding: 10px;"><span>item5</span></div>
+        <div id="item6" style="background-color: yellow; padding: 10px;"><span>item6</span></div>
+        <div id="item7" style="background-color: yellow; padding: 10px;"><span>item7</span></div>
+        <div id="item8" style="background-color: yellow; padding: 10px;"><span>item8</span></div>
+        <div id="item9" style="background-color: yellow; padding: 10px;"><span>item9</span></div>
+        <div id="item10" style="background-color: yellow; padding: 10px;"><span>item10</span></div>
+        <div id="item11" style="background-color: yellow; padding: 10px;"><span>item11</span></div>
+        <div id="item12" style="background-color: yellow; padding: 10px;"><span>item12</span></div>
+        <div id="item13" style="background-color: yellow; padding: 10px;"><span>item13</span></div>
+        <div id="item14" style="background-color: yellow; padding: 10px;"><span>item14</span></div>
+        <div id="item15" style="background-color: yellow; padding: 10px;"><span>item15</span></div>
+        <div id="item16" style="background-color: yellow; padding: 10px;"><span>item16</span></div>
+        <div id="item17" style="background-color: yellow; padding: 10px;"><span>item17</span></div>
+        <div id="item18" style="background-color: yellow; padding: 10px;"><span>item18</span></div>
+        <div id="item19" style="background-color: yellow; padding: 10px;"><span>item19</span></div>
+        <div id="item20" style="background-color: yellow; padding: 10px;"><span>item20</span></div>
+        <div id="item21" style="background-color: yellow; padding: 10px;"><span>item21</span></div>
+        <div id="item22" style="background-color: yellow; padding: 10px;"><span>item22</span></div>
+        <div id="item23" style="background-color: yellow; padding: 10px;"><span>item23</span></div>
+        <div id="item24" style="background-color: yellow; padding: 10px;"><span>item24</span></div>
+        <div id="item25" style="background-color: yellow; padding: 10px;"><span>item25</span></div>
+        <div id="item26" style="background-color: yellow; padding: 10px;"><span>item26</span></div>
+        <div id="item27" style="background-color: yellow; padding: 10px;"><span>item27</span></div>
+        <div id="item28" style="background-color: yellow; padding: 10px;"><span>item28</span></div>
+        <div id="item29" style="background-color: yellow; padding: 10px;"><span>item29</span></div>
+        <div id="item30" style="background-color: yellow; padding: 10px;"><span>item30</span></div>
+        <div id="item31" style="background-color: yellow; padding: 10px;"><span>item31</span></div>
+        <div id="item32" style="background-color: yellow; padding: 10px;"><span>item32</span></div>
+        <div id="item33" style="background-color: yellow; padding: 10px;"><span>item33</span></div>
+        <div id="item34" style="background-color: yellow; padding: 10px;"><span>item34</span></div>
+        <div id="item35" style="background-color: yellow; padding: 10px;"><span>item35</span></div>
+        <div id="item36" style="background-color: yellow; padding: 10px;"><span>item36</span></div>
+        <div id="item37" style="background-color: yellow; padding: 10px;"><span>item37</span></div>
+        <div id="item38" style="background-color: yellow; padding: 10px;"><span>item38</span></div>
+        <div id="item39" style="background-color: yellow; padding: 10px;"><span>item39</span></div>
+        <div id="item40" style="background-color: yellow; padding: 10px;"><span>item40</span></div>
+        <div id="item41" style="background-color: yellow; padding: 10px;"><span>item41</span></div>
+        <div id="item42" style="background-color: yellow; padding: 10px;"><span>item42</span></div>
+        <div id="item43" style="background-color: yellow; padding: 10px;"><span>item43</span></div>
+        <div id="item44" style="background-color: yellow; padding: 10px;"><span>item44</span></div>
+        <div id="item45" style="background-color: yellow; padding: 10px;"><span>item45</span></div>
+        <div id="item46" style="background-color: yellow; padding: 10px;"><span>item46</span></div>
+        <div id="item47" style="background-color: yellow; padding: 10px;"><span>item47</span></div>
+        <div id="item48" style="background-color: yellow; padding: 10px;"><span>item48</span></div>
+        <div id="item49" style="background-color: yellow; padding: 10px;"><span>item49</span></div>
+        <div id="item50" style="background-color: yellow; padding: 10px;"><span>item50</span></div>
+    </div>
+    <p>O item 4 foi posicionado antes dos demais itens, mesmo que ele esteja definido depois dos outros.</p>
+    <p>Para isso, foi adicionado a propriedade <code>order: 1;</code> no item 4.</p>
+    <p>Você pode alterar o valor de <code>order</code> para outros itens, como por exemplo, <code>order: 2;</code> ou <code>order: -1;</code>, 
+        para ver como a ordem de exibição muda.</p>
+</body>
+</html>

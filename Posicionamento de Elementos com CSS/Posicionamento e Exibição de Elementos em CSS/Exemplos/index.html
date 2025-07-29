@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proprieadades</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+}
+</style>
+<body>
+    <main>
+    <h1>Propriedade Display</h1>
+    <p>A proprieade display irá determinar como as caixas irão se comportar na hora que forem exibidas na tela.</p>
+    <ul>
+        <li>
+            border-width
+        </li>
+        <li>
+            border-style
+        </li>
+        <li>
+            border-color
+        </li>
+    </ul>
+    <h2>Exemplos</h2>
+    <h3><code>display: block</code></h3>
+    <br>
+    <div  style="padding: 10px; background-color: red;">
+        <span>Bloco 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255);">
+        <span>Bloco 02</span>
+    </div>
+    <br>
+    <h3><code>display: inline</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; display: inline;">
+        <span>Inline 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); display: inline;">
+        <span>Inline 02</span>
+    </div>
+    <span style="padding: 10px; background-color: yellowgreen;" >Inline 03</span>
+    <br>
+    <h3><code>display: inline-block</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; display: inline-block; height: 100px;">
+        <span>Inline Block 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); display: inline-block; height: 100px;">
+        <span>Inline Block 02</span>
+    </div>
+    <br>
+    <h3><code>display: none</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red;">
+        <span>None 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); display: none;">
+        <span>None 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen;">
+        <span>None 03</span>
+    </div>
+    <div style="padding: 10px; background-color: orange; visibility: hidden;">
+        <span>Visibility: hidden</span>
+    </div>
+    <div style="padding: 10px; background-color: purple;">
+        <span>Visibility: visibility</span>
+    </div>
+    <br>
+    <h1>Posicionando os Elementos em Tela</h1>
+    <p>A proprieade position irá ajudar a manipular a localização/posição do elemento na página HTML</p>
+    <ul>
+        <li>
+            position: static
+        </li>
+        <li>
+            position: relative
+        </li>
+        <li>
+            position: absolute
+        </li>
+        <li>
+            position: fixed
+        </li>
+        <li>
+            position: sticky
+        </li>
+    </ul>
+    <h2>Exemplos</h2>
+    <h3><code>position: static</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; position: static;">
+        <span>Static 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: static;">
+        <span>Static 02</span>
+    </div>
+    <br>
+    <h3><code>position: relative</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; position: relative; top: 20px; ">
+        <span>Relative 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: relative; top: 20px; ">
+        <span>Relative 02</span>
+    </div>
+    <br>
+    <h3><code>position: absolute</code></h3>
+    <br>
+    <div style=" width: 80%; height: 40vh; border: 1px solid red;" > 
+        <div>
+            <span style="padding: 10px; background-color: red; position: absolute; top: 20px; right: 20px;">
+                Absolute 01
+            </span>
+        </div>
+    </div>
+    <br>
+    <h3><code>position: fixed</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; position: fixed; bottom: 20px; right: 120px;">
+        <span>Fixed 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: fixed; bottom: 20px; right: 20px;">
+        <span>Fixed 02</span>
+    </div>
+    <br>
+    <h3><code>position: sticky</code></h3>
+    <br>
+    <div style="padding: 100px; background-color: red; position: sticky; top: 0;">
+        <span>Sticky 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: sticky; top: 0;">
+        <span>Sticky 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen; position: sticky; top: 0;">
+        <span>Sticky 03</span>
+    </div>
+        <div style="padding: 100px; background-color: red; position: sticky; top: 0;">
+        <span>Sticky 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: sticky; top: 0;">
+        <span>Sticky 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen; position: sticky; top: 0;">
+        <span>Sticky 03</span>
+    </div>
+        <div style="padding: 100px; background-color: red; position: sticky; top: 0;">
+        <span>Sticky 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: sticky; top: 0;">
+        <span>Sticky 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen; position: sticky; top: 0;">
+        <span>Sticky 03</span>
+    </div>
+        <div style="padding: 100px; background-color: red; position: sticky; top: 0;">
+        <span>Sticky 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: sticky; top: 0;">
+        <span>Sticky 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen; position: sticky; top: 0;">
+        <span>Sticky 03</span>
+    </div>
+    <br>
+    <h1>Propriedade Z-Index</h1>
+    <p>A propriedade z-index irá definir a ordem de empilhamento dos elementos na tela.</p>
+    <ul>
+        <li>
+            z-index: 1
+        </li>
+        <li>
+            z-index: 2
+        </li>
+        <li>
+            z-index: 3
+        </li>
+        <li>
+            z-index: 4
+        </li>
+    </ul>
+    <h2>Exemplos</h2>
+    <h3><code>z-index</code></h3>
+    <br>
+    <div style="padding: 10px; background-color: red; position: relative; z-index: 1;">
+        <span>Z-Index 01</span>
+    </div>
+    <div style="padding: 10px; background-color: rgb(0, 119, 255); position: relative; z-index: 2;">
+        <span>Z-Index 02</span>
+    </div>
+    <div style="padding: 10px; background-color: yellowgreen; position: relative; z-index: 3;">
+        <span>Z-Index 03</span>
+    </div>
+    <div style="padding: 10px; background-color: orange; position: relative; z-index: 4;">
+        <span>Z-Index 04</span>
+    </div>
+    <div style="padding: 10px; background-color: purple; position: relative; z-index: 5;">
+        <span>Z-Index 05</span>
+    </div>
+    <div style="padding: 10px; background-color: pink; position: relative; z-index: 6;">
+        <span>Z-Index 06</span>
+    </div>
+    <div style="padding: 10px; background-color: brown; position: relative
+; z-index: 7;">
+        <span>Z-Index 07</span>
+    </div>
+    <div style="padding: 10px; background-color: gray; position: relative
+; z-index: 8;">
+        <span>Z-Index 08</span>
+    </div>
+    <br>
+    </main>
+</body>
+</html>
