@@ -249,43 +249,45 @@ iframe {
 }
 
 .description {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background-color: #e7e7e7;
-  padding: 12px 6px;
-  border-radius: 12px;
-  font-size: 14px;
-  line-height: 1.4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #e7e7e7;
+    padding: 12px 6px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 /* Esconde parte do conteúdo por altura */
 .description-content {
-  max-height: 7.2em; /* Aproximadamente 4 linhas de texto */
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+    max-height: 7.2em;
+    /* Aproximadamente 4 linhas de texto */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 }
 
 /* Quando o checkbox é marcado, mostra tudo */
-#toggle-description:checked ~ .description-content {
-  max-height: 1000px; /* ou algo bem grande */
+#toggle-description:checked~.description-content {
+    max-height: 1000px;
+    /* ou algo bem grande */
 }
 
 /* Botão de ver mais */
 .toggle-btn {
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
-  width: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    width: fit-content;
 }
 
 .toggle-btn::before {
-  content: "...mais";
+    content: "...mais";
 }
 
-#toggle-description:checked ~ .toggle-btn::before {
-  content: "...menos";
+#toggle-description:checked~.toggle-btn::before {
+    content: "...menos";
 }
 
 
@@ -742,53 +744,55 @@ aside {
 }
 
 @media (max-width: 868px) {
-.headerCenter {
-    flex: auto;
-    width: 65%;
-}
+    .headerCenter {
+        flex: auto;
+        width: 65%;
+    }
 
-.headerLeft,
-.headerRight {
-    flex: auto;
-    display: flex;
-    gap: 12px;
-}
+    .headerLeft,
+    .headerRight {
+        flex: auto;
+        display: flex;
+        gap: 12px;
+    }
 
-.headerLeft {
-    width: 25%;
-}
+    .headerLeft {
+        width: 25%;
+    }
 
-.headerRight {
-    width: 10%;
-}
+    .headerRight {
+        width: 10%;
+    }
 
-.headerCenter input {
-    width: 55%;
-    height: 100%;
-}
+    .headerCenter input {
+        width: 55%;
+        height: 100%;
+    }
 
-.headerCenter .SearchIcon {
-    right: 25%;
-    width: 15%;
-}
+    .headerCenter .SearchIcon {
+        right: 25%;
+        width: 15%;
+    }
 
-.headerCenter .IconSearchVoz {
-    margin-left: 12%;
-}
+    .headerCenter .IconSearchVoz {
+        margin-left: 12%;
+    }
+
     .headerRight .IconCamera {
         display: none;
     }
 
     iframe {
-    width: 100%;
-    height: 50vh;
-    border-radius: 15px;
-}
+        width: 100%;
+        height: 50vh;
+        border-radius: 15px;
+    }
 
 
     .info .other-btns .btn-download {
         display: none;
     }
+
     .thumb {
         width: 48%;
     }
@@ -807,61 +811,61 @@ aside {
     }
 
     .Logo img {
-    max-width: 100px;
-}
+        max-width: 100px;
+    }
 
-.headerCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: auto;
-    width: 40%;
-}
+    .headerCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: auto;
+        width: 40%;
+    }
 
-.headerLeft,
-.headerRight {
-    flex: auto;
-    display: flex;
-    gap: 12px;
-}
+    .headerLeft,
+    .headerRight {
+        flex: auto;
+        display: flex;
+        gap: 12px;
+    }
 
-.headerLeft {
-    width: 30%;
-}
+    .headerLeft {
+        width: 30%;
+    }
 
-.headerRight {
-    width: 30%;
-    gap: 12px;
-}
+    .headerRight {
+        width: 30%;
+        gap: 12px;
+    }
 
 
-.headerCenter input {
-    display: none;
-}
+    .headerCenter input {
+        display: none;
+    }
 
-.headerCenter .SearchIcon {
-    position: none;
-    right: 0;
-    border-radius: 0px;
-    border: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .headerCenter .SearchIcon {
+        position: none;
+        right: 0;
+        border-radius: 0px;
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.headerCenter .IconSearchVoz {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-left: 0;
-    position: none;
-    background-color: #F9F9F9;
-    border-radius: 50%;
-    transition: all ease-in-out 0.3s;
-}
+    .headerCenter .IconSearchVoz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+        position: none;
+        background-color: #F9F9F9;
+        border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+    }
 
     .info {
         display: flex;
@@ -916,39 +920,41 @@ aside {
 
 @media (max-width: 475px) {
 
-header {
+    header {
         padding: 6px 12px;
     }
-    
+
     .Logo img {
         max-width: 80px;
     }
 
-.content-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-}
+    .content-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
 
-main {
-    padding: 12px 0 2rem 0;
-}
+    main {
+        padding: 12px 0 2rem 0;
+    }
 
-iframe {
-    border-radius: 0px;
-    width: 100%;
-    height: 40vh;
-}
+    iframe {
+        border-radius: 0px;
+        width: 100%;
+        height: 40vh;
+    }
 
-iframe + h1 {
-    margin-left: 6px;
-}
+    iframe+h1 {
+        margin-left: 6px;
+    }
+
     .info {
         width: 95%;
         align-self: center;
         height: 12vh;
     }
+
     .info .other-btns .btn-share {
         display: none;
     }

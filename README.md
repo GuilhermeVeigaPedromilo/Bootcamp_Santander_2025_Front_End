@@ -22,3 +22,9 @@
 as propriedades básicas da linguagem de estilização, além de trabalhar com as unidades de medidas relativas e absolutas que aprendemos ao longo da trilha.
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Explorando%20os%20Fundamentos%20do%20CSS/Criando%20sua%20Primeira%20Landing%20Page%20com%20HTML%20e%20CSS/README.md)
+
+### 📺 Clonando a Página do YouTube com CSS
+
+- O objetivo do desafio era recriar a interface do YouTube com base em um template fornecido, utilizando **HTML5** e **CSS3**, com foco na aplicação de boas práticas de **semântica**, **posicionamento**, **responsividade** e **estilização**.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Posicionamento%20de%20Elementos%20com%20CSS/Desafio%20de%20Projeto%20-%20Clonando%20a%20Página%20do%20Youtube%20com%20CSS/desafio-de-projeto-clonando-a-pagina-do-youtube-com-css.md)
