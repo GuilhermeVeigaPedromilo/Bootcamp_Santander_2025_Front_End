@@ -28,3 +28,10 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 - O objetivo do desafio era recriar a interface do YouTube com base em um template fornecido, utilizando **HTML5** e **CSS3**, com foco na aplicação de boas práticas de **semântica**, **posicionamento**, **responsividade** e **estilização**.
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Posicionamento%20de%20Elementos%20com%20CSS/Desafio%20de%20Projeto%20-%20Clonando%20a%20Página%20do%20Youtube%20com%20CSS/desafio-de-projeto-clonando-a-pagina-do-youtube-com-css.md)
+
+### 📲 Desafio de Projeto - Construindo um Layout Responsivo Para o Site do Discord Com CSS
+
+- Neste Desafio você colocará a mão na massa e irá reproduzir a página da incrível plataforma do Discord colocando em prática todos os conceitos aprendidos até aqui, principalmente sobre Responsividade no CSS.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Posicionamento%20de%20Elementos%20com%20CSS/Construindo%20um%20Layout%20Responsivo%20Para%20o%20Site%20do%20Discord%20Com%20CSS/readme.md)
+
