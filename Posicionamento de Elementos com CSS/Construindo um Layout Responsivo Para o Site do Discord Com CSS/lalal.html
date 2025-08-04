@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Exemplo de Dropdown CSS</title>
+</head>
+
+<style>
+  /* RESET básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+}
+footer {
+  padding: 1rem;
+}
+
+/* Container geral */
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Título do menu */
+.element-span-title-dropdown {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Estrutura do dropdown */
+.dropdown-toggle {
+  display: none; /* só ativamos no mobile */
+}
+
+/* Itens internos */
+.dropdown-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dropdown-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Media query para ≤768px */
+@media (max-width: 768px) {
+
+  .dropdown-toggle {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding: 0.75rem 0;
+    gap: 0.5rem;
+  }
+
+  /* Label que atua como botão */
+  .dropdown-toggle > label {
+    cursor: pointer;
+  }
+  .dropdown-toggle > label span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  /* Ícone de seta */
+  .icon-dropdown {
+    width: 16px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  /* Esconde a lista */
+  .dropdown-toggle input[type="checkbox"] ~ .dropdown-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  /* Expande ao marcar */
+  .dropdown-toggle input[type="checkbox"]:checked ~ .dropdown-list {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+  }
+
+  /* Roda a seta */
+  .dropdown-toggle input[type="checkbox"]:checked + label .icon-dropdown {
+    transform: rotate(180deg);
+  }
+}
+
+</style>
+<body>
+
+  <footer>
+    <div class="info-footer">
+
+      <!-- Título geral (opcional) -->
+      <span class="element-span-title-dropdown">Menu</span>
+
+      <!-- Dropdown 1 -->
+      <div class="dropdown-toggle">
+        <input type="checkbox" id="toggle-products" hidden>
+        <label for="toggle-products">
+          <span>
+            Produtos
+            <img class="icon-dropdown" src="./src/assets/icons/dropdown-icon.svg" alt="seta">
+          </span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="#">Baixar</a></li>
+          <li><a href="#">Nitro</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">App Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- Dropdown 2 -->
+      <div class="dropdown-toggle">
+        <input type="checkbox" id="toggle-company" hidden>
+        <label for="toggle-company">
+          <span>
+            Empresa
+            <img class="icon-dropdown" src="./src/assets/icons/dropdown-icon.svg" alt="seta">
+          </span>
+        </label>
+        <ul class="dropdown-list">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Empregos</a></li>
+          <li><a href="#">Marca</a></li>
+          <li><a href="#">Notícias</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

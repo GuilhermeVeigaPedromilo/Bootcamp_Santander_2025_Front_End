@@ -106,13 +106,13 @@ main {
 }
 
 .apresentation-discord p {
-    width: 50%;
+    width: 65%;
     font-size: 1.2rem;
     text-align: center;
     color: white;
 }
 
-.apresentation-discord .btns-optios-discord {
+.apresentation-discord .btns-options-discord {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -120,7 +120,7 @@ main {
     justify-content: center;
 }
 
-.apresentation-discord .btns-optios-discord button {
+.apresentation-discord .btns-options-discord button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,29 +135,29 @@ main {
     transition: 0.3s;
 }
 
-.apresentation-discord .btns-optios-discord .btn-download-discord {
+.apresentation-discord .btns-options-discord .btn-download-discord {
     background-color: white;
 }
 
-.apresentation-discord .btns-optios-discord .btn-download-discord:hover {
+.apresentation-discord .btns-options-discord .btn-download-discord:hover {
     background-color: rgb(235, 235, 235);
 }
 
-.apresentation-discord .btns-optios-discord .btn-download-discord .icon-download {
+.apresentation-discord .btns-options-discord .btn-download-discord .icon-download {
     width: 18px;
     height: auto
 }
 
-.apresentation-discord .btns-optios-discord .btn-web-discord {
+.apresentation-discord .btns-options-discord .btn-web-discord {
     color: white;
     background-color: black;
 }
 
-.apresentation-discord .btns-optios-discord .btn-web-discord:hover {
+.apresentation-discord .btns-options-discord .btn-web-discord:hover {
     background-color: rgb(41, 41, 41);
 }
 
-.about-discords-tool-1 {
+.about-discords-tool {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,15 +165,420 @@ main {
     padding: 24px 36px;
 }
 
-.about-discords-tool-1 h1 {
-    width: 27%;
+.about-discords-tool:nth-of-type(odd) {
+    background-color: #f6f6f6;
+}
+
+.about-discords-tool figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: auto;
+}
+
+.about-discords-tool .about {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 24px;
+}
+
+.about-discords-tool .about h1 {
+    width: 60%;
     font-size: 2.5rem;
     font-weight: 800;
 }
 
-.about-discords-tool-1 p {
-    width: 33%;
+.about-discords-tool .about p {
+    width: 80%;
     font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.about-discords-tool:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-discords-tool:last-of-type h1 {
+    width: 35%;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.about-discords-tool:last-of-type p {
+    width: 75%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.about-discords-tool:last-of-type figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 4rem 36px 6rem 36px;
+    height: 95vh;
+    background: linear-gradient(180deg, rgb(45, 45, 45), black, black, black);
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+footer a:hover {
+    text-decoration: underline white;
+}
+
+footer .info-footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    color: white;
+}
+
+footer .info-footer .info-base {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+footer .info-footer .info-base .logo-discord {
+    width: 64px;
+    height: 64px;
+}
+
+footer .info-footer .info-base .language-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .info-footer .info-base .language-section span {
+    color: rgba(255, 255, 255, 0.533);
+}
+
+footer .info-footer .info-base .select-language {
+    background-color: #2c2f33;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+footer .info-footer .info-base .social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .info-footer .info-base .social-section span {
+    color: rgba(255, 255, 255, 0.533);
+}
+
+footer .info-footer .element-span-title-dropdown {
+    display: none;
+}
+
+footer .info-footer .info-base .options-media-of-discord {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+footer .info-footer .info-base .options-media-of-discord img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .info-footer .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .info-footer .dropdown .dropdown-header {
+    color: rgba(255, 255, 255, 0.533);
+}
+
+footer .info-footer .dropdown .dropdown-header .element-icon-dropdown {
+    display: none;
+}
+
+footer .info-footer .dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .info-footer .dropdown li a {
+    color: white;
+}
+
+footer .logo-discord-bigger {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 72px);
+    height: auto;
+    opacity: 0.7;
+}
+
+@media (max-width: 1150px) {
+    header .tabs {
+        display: none;
+    }
+
+    header .btn-login {
+        position: absolute;
+        right: 36px;
+    }
+
+    .about-discords-tool {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-discords-tool .about {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%
+    }
+
+    .about-discords-tool:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .about-discords-tool .about h1,
+    .about-discords-tool:last-of-type h1 {
+        width: 70%;
+    }
+
+    .about-discords-tool .about p,
+    .about-discords-tool:last-of-type p {
+        width: 50%;
+    }
+
+    .about-discords-tool figure,
+    .about-discords-tool:last-of-type figure {
+        width: 100%;
+    }
+}
+
+@media (max-width: 967px) {
+    footer {
+        height: auto;
+    }
+
+    footer .info-footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 100px;
+    }
+
+    footer .info-footer>.dropdown:nth-of-type(1) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    footer .info-footer>.dropdown:nth-of-type(2) {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    footer .info-footer>.dropdown:nth-of-type(3) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    footer .info-footer>.dropdown:nth-of-type(4) {
+        grid-row: 2;
+        grid-column: 3;
+    }
 
 }
 
+@media (max-width: 768px) {
+    .apresentation-discord h1 {
+        font-size: 4rem;
+    }
+
+    .apresentation-discord p {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .apresentation-discord .btns-options-discord {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .apresentation-discord .btns-options-discord button {
+        padding: 12px 24px;
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .about-discords-tool:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .about-discords-tool .about h1,
+    .about-discords-tool:last-of-type h1 {
+        width: 85%;
+        font-size: 2rem;
+    }
+
+    .about-discords-tool .about p,
+    .about-discords-tool:last-of-type p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .about-discords-tool figure,
+    .about-discords-tool:last-of-type figure {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer .info-footer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    footer .info-footer .info-base .language-section {
+        width: 65%;
+    }
+
+    footer .info-footer .element-span-title-dropdown {
+        display: flex;
+        color: rgba(255, 255, 255, 0.533);
+        font-size: 1rem;
+    }
+
+    footer .info-footer .dropdown {
+        padding: 0 0 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+    }
+
+    footer .info-footer .dropdown .dropdown-header {
+        display: flex;
+        color: white;
+        font-weight: 600;
+        font-size: 1.125rem;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    footer .info-footer .dropdown label .element-icon-dropdown {
+        display: flex;
+        width: 32px;
+        height: auto;
+    }
+
+    /* Aplica a todos os ul dentro de .dropdown */
+    footer .info-footer .dropdown ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* Exibe o ul correspondente quando input estiver marcado */
+    footer .info-footer .dropdown input[type="checkbox"]:checked~ul {
+        max-height: 500px;
+        transition: max-height 0.4s ease-in;
+    }
+
+    /* Rotaciona o ícone apenas do label vinculado */
+    footer .info-footer .dropdown input[type="checkbox"]:checked+label .element-icon-dropdown {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 525px) {
+    header {
+        padding: 12px 24px;
+    }
+    header .btn-login {
+    padding: 0.5rem 0.75rem;
+}
+
+    .apresentation-discord {
+        height: 50vh;
+    }
+    .apresentation-discord h1 {
+        font-size: 2.5rem;
+        width: 65%;
+    }
+
+    .apresentation-discord p {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .apresentation-discord .btns-options-discord {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .apresentation-discord .btns-options-discord button {
+        padding: 6px 12px;
+        width: 85%;
+        font-size: 0.8rem;
+    }
+
+    .about-discords-tool {
+        padding: 12px 24px;
+    }
+
+    .about-discords-tool:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .about-discords-tool .about h1,
+    .about-discords-tool:last-of-type h1 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .about-discords-tool .about p,
+    .about-discords-tool:last-of-type p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
