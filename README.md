@@ -35,3 +35,9 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Posicionamento%20de%20Elementos%20com%20CSS/Construindo%20um%20Layout%20Responsivo%20Para%20o%20Site%20do%20Discord%20Com%20CSS/readme.md)
 
+### 🗞️ Desafio de Projeto - Classificador de Nível de Herói
+
+- Este desafio consiste em criar uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilizar uma estrutura de decisão para apresentar uma mensagem.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Lógica%20Aplicada%20com%20Javascript/Classificador%20de%20Nível%20de%20Herói/readme.md)
+
