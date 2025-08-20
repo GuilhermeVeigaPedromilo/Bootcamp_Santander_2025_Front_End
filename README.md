@@ -41,3 +41,9 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Lógica%20Aplicada%20com%20Javascript/Classificador%20de%20Nível%20de%20Herói/readme.md)
 
+### 💼 Desafio de Projeto - Construindo seu Portfólio Front-end do Zero com HTML, CSS e JavaScript
+
+ - Este projeto tem como objetivo desenvolver um portfólio front-end. Sinta-se livre para utilizar as tecnologias que desejar e expressar sua personalidade e estilo através do design e dos elementos interativos do seu portfólio. Após concluir, você pode hospedá-lo em uma plataforma de sua escolha, como GitHub Pages, Netlify, Vercel, etc.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Seus%20Primeiros%20Passos%20com%20JavaScript/Construindo%20seu%20Portfólio%20Front-end%20do%20Zero%20com%20HTML,%20CSS%20e%20JavaScript/readme.md)
+- [🔗  Acesse o Portfólio Aqui!](https://guilhermeveigapedromilo.github.io/GuilhermeVeigaPedromilo/)
