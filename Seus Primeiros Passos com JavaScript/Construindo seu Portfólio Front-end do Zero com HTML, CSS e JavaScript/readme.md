@@ -1,4 +1,4 @@
-## 💼 Desafio de Projeto - Construindo seu Portfólio Front-end do Zero com HTML, CSS e JavaScript
+# 💼 Desafio de Projeto - Construindo seu Portfólio Front-end do Zero com HTML, CSS e JavaScript
 
 Este projeto tem como objetivo desenvolver um portfólio front-end. Sinta-se livre para utilizar as tecnologias que desejar e expressar sua personalidade e estilo através do design e dos elementos interativos do seu portfólio. Após concluir, você pode hospedá-lo em uma plataforma de sua escolha, como GitHub Pages, Netlify, Vercel, etc.
 

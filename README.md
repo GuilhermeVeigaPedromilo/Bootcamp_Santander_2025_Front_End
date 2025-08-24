@@ -66,3 +66,9 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Criando%20Páginas%20Web%20Dinâmicas%20e%20Interativas/Publicando%20Seu%20Portfólio%20Profissional%20no%20GitHub%20Pages/readme.md)
 - [🔗  Acesse o Portfólio Aqui!](https://guilhermeveigapedromilo.github.io/GuilhermeVeigaPedromilo/)
+
+## 🎯 Resultados
+
+<img src="./public/images/certificado.png" alt="Santander Bootcamp 2025 - Certificado">
+
+---
