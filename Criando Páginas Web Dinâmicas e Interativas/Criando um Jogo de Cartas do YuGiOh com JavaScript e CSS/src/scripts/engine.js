@@ -29,7 +29,7 @@ const state = {
     button: document.getElementById("config-audio"),
     icon: document.getElementById("audio-icon"),
     icons: {
-        play: "./src/assets/icons/audio-volume-medium-svgrepo-com.png",
+        play: "./src/assets/icons/audio-volume-medium-svgrepo-com.svg",
         mute: "./src/assets/icons/sem-som.png"
     }
     }

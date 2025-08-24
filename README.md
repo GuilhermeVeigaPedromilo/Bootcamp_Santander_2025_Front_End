@@ -48,6 +48,12 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 - [📄 Acesse o Arquivo do Desafio aqui!](./Seus%20Primeiros%20Passos%20com%20JavaScript/Construindo%20seu%20Portfólio%20Front-end%20do%20Zero%20com%20HTML,%20CSS%20e%20JavaScript/readme.md)
 - [🔗  Acesse o Portfólio Aqui!](https://guilhermeveigapedromilo.github.io/GuilhermeVeigaPedromilo/)
 
+### 🛠️ Desafio de Projeto - Construindo uma Pokédex com JavaScript
+
+- Entenda a importância do Git/GitHub nos Desafios de Projeto da DIO, além de explorar o mundo Pokémon através do consumo de uma API REST para a criação de uma Pokédex incrível! Para isso, você irá explorar, além do JavaScript, todos os fundamentos de desenvolvimento Web aprendidos até aqui.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Consumindo%20APIS%20com%20JavaScript/Construindo%20uma%20Pokédex%20com%20JavaScript/README.MD)
+
 ### 🕹️ Desafio de Projeto - Criando um Jogo de Cartas do Yu-Gi-Oh! com JavaScript e CSS
 
 - Vamos recriar um jogo do Yu-Gi-Oh utilizando as mecânicas de jogo do Jo-Ken-Po, vamos explorar conceitos avançados de organização de states com Javascript puro, estruturação de arquivos e criação de funções reaproveitáveis
