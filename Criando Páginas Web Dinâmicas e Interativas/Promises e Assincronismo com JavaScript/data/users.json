@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Guilherme",
+        "age": 18,
+        "grade": [
+            10, 8, 8, 8
+        ]
+    },
+        {
+        "id": 2,
+        "name": "Isadora",
+        "age": 21,
+        "grade": [
+            10, 9, 8, 9.5
+        ]
+    },
+        {
+        "id": 3,
+        "name": "Bruce",
+        "age": 57,
+        "grade": [
+            10, 5, 9, 10
+        ]
+    }
+]
