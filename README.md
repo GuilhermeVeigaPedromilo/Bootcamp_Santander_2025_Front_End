@@ -50,6 +50,13 @@ as propriedades básicas da linguagem de estilização, além de trabalhar com a
 
 ### 🕹️ Desafio de Projeto - Criando um Jogo de Cartas do Yu-Gi-Oh! com JavaScript e CSS
 
-Vamos recriar um jogo do Yu-Gi-Oh utilizando as mecânicas de jogo do Jo-Ken-Po, vamos explorar conceitos avançados de organização de states com Javascript puro, estruturação de arquivos e criação de funções reaproveitáveis
+- Vamos recriar um jogo do Yu-Gi-Oh utilizando as mecânicas de jogo do Jo-Ken-Po, vamos explorar conceitos avançados de organização de states com Javascript puro, estruturação de arquivos e criação de funções reaproveitáveis
 
 - [📄 Acesse o Arquivo do Desafio aqui!](./Criando%20Páginas%20Web%20Dinâmicas%20e%20Interativas/Criando%20um%20Jogo%20de%20Cartas%20do%20YuGiOh%20com%20JavaScript%20e%20CSS/readme.md)
+
+### 📡 Desafio de Projeto - Publicando Seu Portfólio Profissional no GitHub Pages
+
+- Explore todos os conceitos que aprendemos nessa imersão e replique (ou melhore, porque não) este projeto prático. Para isso, crie seu próprio repositório e, com isso, aumente ainda mais seu portfólio de projetos no GitHub! Lembre-se de que você pode criar sua própria estrutura JSON e deixar a sua página de portfólio profissional totalmente dinâmica e com a sua cara.
+
+- [📄 Acesse o Arquivo do Desafio aqui!](./Criando%20Páginas%20Web%20Dinâmicas%20e%20Interativas/Publicando%20Seu%20Portfólio%20Profissional%20no%20GitHub%20Pages/readme.md)
+- [🔗  Acesse o Portfólio Aqui!](https://guilhermeveigapedromilo.github.io/GuilhermeVeigaPedromilo/)
